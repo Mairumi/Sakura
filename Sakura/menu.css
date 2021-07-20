@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+body{
+    background-color:#F9BDC5;
+    }
+
+ul{
+    list-style-type: none;}
+
+.container__card{
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 100px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card__father{
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card__father:hover .card{
+    transform: rotateY(180deg);
+}
+
+
+.card{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front{
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card__front,
+.card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style:flat;
+    border-radius: 20px;
+}
+
+.card__back{
+    transform: rotateY(180deg);
+    background: white;
+}
+
+.card__back h1 {
+    color:#C587CA}
+
+.body__card_front{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+}
+
+.body__card_back{
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+
+.body__card_back li{
+    text-align: left;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.body__card_back p{
+    text-align: left;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+
+#card__promos{
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.card_promos{
+    width: 350px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+.card__father:hover .card_promos{
+    transform: rotateY(180deg);
+}
+
+#caja-comprar {
+    display: flex;
+    justify-content: center
+    
+}
+
+
+
+.pedido{
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #C587CA;
+    box-shadow: 1px 1px 30px -5px #C587CA;
+    border-radius: 10px;
+    transition: box-shadow 600ms;  
+}
+
+.pedido:hover{
+    box-shadow: 1px 1px 30px 0px #C54F98;
+}

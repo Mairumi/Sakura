@@ -1,0 +1,150 @@
+@import url(video.css);
+@import url(footer.css);
+@import url(nosotros.css);
+@import url(menu.css);
+@import url(contacto.css);
+
+*{margin:0;
+    padding: 0;
+    box-sizing: border-box;}
+    
+    body{margin:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    header {
+        background-color: #d8bfd8;
+        width: 100%;
+        z-index: 1000;
+        position: fixed;
+       
+    }
+    
+    
+    
+    #menu_izq{
+        display: none;
+      
+    }
+    
+    #menu_izq img {
+        width: 100%;
+    }
+    .icon-menu img{
+        width:40px;
+        margin: -10px -10px 10px -15px;
+        
+    }
+    
+    
+    nav{
+        width: 100%;
+        background-color:#d8bfd8;
+    }
+    
+    header label {
+        display: none;
+        width: 30px;
+        height: 30px;
+        padding-top: 13px;
+        padding-left:8px ;
+        border-right: 1px solid white;
+    }
+    
+    header label:hover {
+        cursor:pointer;
+        background: #c54f98;
+    }
+    
+    
+    .menu ul{
+        margin:0px;
+        list-style: none;
+        padding: 0px;
+        display: flex;      
+    }
+    
+    
+    .menu li a {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        font-size:18px;
+        text-shadow: 2px 2px 2px #c587ca;
+        display: block;
+        padding:15px 30px;
+        color: white;
+        text-decoration: none;
+        
+    }
+    
+    .menu li:hover {
+        background: #c54f98;  
+    }
+       
+    .menu  li ul {
+        background-color:#EC7CAC;
+        position: absolute;
+        display: none;}
+    
+    .menu li:hover > ul {
+        display:block
+    }
+    
+    
+    
+    video {
+        width: 100%;
+        position: fixed;
+        z-index: -10;
+    }
+            
+            
+    #video-sakura{
+        display: flex;
+        justify-content: center;
+    }
+            
+    #logo-sakuraa{
+
+        width: 50%;
+    }
+    
+   
+    .copy a{text-decoration: none;
+    color:black}
+    
+    
+    @media (max-width:768px) {
+        header label {
+            display: block;
+    }
+        .menu {
+            position:absolute;
+            background: #d8bfd8;
+            width: 50%;
+            margin-left: -50%;
+            transition: all 0.5s;
+    }
+        .menu li ul {
+            position: relative;
+            margin-left: 10px;
+                
+    }    
+    
+          
+        .menu ul{
+           flex-direction:column;
+    }
+    
+      
+        .menu li{ 
+            border-top: 1px solid white;
+    }
+    
+    
+        #menu_izq:checked ~.menu {
+            margin: 0;
+    }
+    
+    }
+    
